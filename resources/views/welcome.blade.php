@@ -19,7 +19,7 @@
 <body>
     <div class="static bg-cover bg-center bg-no-repeat m-0 bg-fixed h-screen flex flex-col items-center justify-center"
         id="slider" style="background-image: url('{{ asset('img/img1.jpg') }}')">
-        <div class="flex flex-col space-y-2  justify-center items-center fixed top-0 w-full">
+        <div class="flex flex-col space-y-2  justify-center items-center fixed top-0 w-full" id="navi">
             <span class="font-extrabold text-xl text-white mt-5">logo</span>
             <div class="flex justify-center items-center text-white space-x-5 py-5 text-sm font-light ">
                 <a href=""
@@ -68,6 +68,16 @@
                 i = 0;
             }
         }, 5000);
+
+        window.onscroll = function(e) {
+            var navi = document.getElementById("navi")
+            navi.classList.add("bg-gray-800")
+            navi.classList.add("bg-opacity-50")
+            if (window.scrollY == 0) {
+                navi.classList.remove("bg-gray-800")
+                navi.classList.remove("bg-opacity-50")
+            }
+        }
 
     </script>
 </body>
