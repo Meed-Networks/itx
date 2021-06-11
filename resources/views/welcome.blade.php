@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itxtelecoms</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <style>
         * {
             padding: 0;
@@ -17,31 +18,49 @@
 </head>
 
 <body>
-    <div class="static bg-cover bg-center bg-no-repeat m-0 bg-fixed h-screen flex flex-col items-center justify-center"
-        id="slider" style="background-image: url('{{ asset('img/img1.jpg') }}')">
-        <div class="flex flex-col space-y-2  justify-center items-center fixed top-0 w-full" id="navi">
-            <span class="font-extrabold text-xl text-white mt-5">logo</span>
-            <div class="flex justify-center items-center text-white space-x-5 py-5 text-sm font-light ">
-                <a href=""
-                    class="border-b hover:border-gray-200 border-transparent pb-2 transition duration-300 ease-in-out">Home</a>
-                <a href=""
-                    class="border-b hover:border-gray-200 border-transparent pb-2 transition duration-300 ease-in-out">Services</a>
-                <a href=""
-                    class="border-b hover:border-gray-200 border-transparent pb-2 transition duration-300 ease-in-out">Pricing</a>
+    <div class="fixed top-0 w-full" id="navi">
+        <div class="flex items-center justify-between px-3 text-white">
+            <div class="text-xl font-bold text-green-800">
+                LOGO
+            </div>
+            <div class="static" x-data="dropdown()">
+                <button class="text-green-800 hover:outline-none lg:hidden" x-on:click="open">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <ul class="fixed right-0 grid grid-cols-1 mr-2 border border-green-900 divide-y divide-green-900"
+                    :class="{'hidden lg:flex lg:border-none  lg:divide-none lg:bg-none lg:space-x-2': isOpen() == false }" x-on:click.away="close">
+                    <li>
+                        <a href="" class="block px-2 py-1 hover:bg-green-900 lg:hover:border-b lg:px-0 lg:hover:bg-none">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="block px-2 py-1 hover:bg-green-900 lg:hover:border-b lg:px-0 lg:hover:bg-none">Services</a>
+                    </li>
+                    <li>
+                        <a href="" class="block px-2 py-1 hover:bg-green-900 lg:hover:border-b lg:px-0 lg:bg-none">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div style="background-image: url('{{ asset('img/img3.png') }}')"
+        class="static flex flex-col items-center justify-center h-screen m-0 bg-fixed bg-center bg-no-repeat bg-cover"
+        id="slider">
         <div
-            class="flex flex-col justify-center items-center space-y-5 text-white py-10 bg-gray-800 bg-opacity-25 w-full h-full">
-            <div class="flex items-center flex-col justify-center divide-y">
-                <p class="font-bold text-3xl pb-2 text-center">
+            class="flex flex-col items-center justify-center w-full h-full py-10 space-y-5 text-white bg-gray-800 bg-opacity-25">
+            <div class="grid grid-cols-1 justify-items-center">
+                <p class="pb-2 text-3xl font-bold text-center">
                     Fast and Unlimited Internet
                 </p>
-                <p class="pt-2 font-semibold text-lg">
+                <p class="pt-2 text-lg font-semibold text-center">
                     No Throttling
                 </p>
             </div>
             <a href=""
-                class="font-bold text-lg border-2 border-purple-900 px-3 py-2 hover:bg-purple-900 transition duration-300 ease-in-out rounded">
+                class="px-3 py-2 text-lg font-bold transition duration-300 ease-in-out border-2 border-green-900 rounded hover:bg-green-900">
                 Connect
             </a>
         </div>
@@ -76,6 +95,21 @@
             if (window.scrollY == 0) {
                 navi.classList.remove("bg-gray-800")
                 navi.classList.remove("bg-opacity-50")
+            }
+        }
+
+        function dropdown() {
+            return {
+                show: false,
+                open() {
+                    this.show = !this.show;
+                },
+                close() {
+                    this.show = false;
+                },
+                isOpen() {
+                    return this.show;
+                }
             }
         }
 
