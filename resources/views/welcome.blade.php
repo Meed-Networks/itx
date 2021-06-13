@@ -17,30 +17,30 @@
     </style>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <div class="fixed top-0 w-full" id="navi">
-        <div class="flex items-center justify-between px-3 text-white">
-            <div class="text-xl font-bold text-green-800">
+        <div class="flex items-center justify-between px-3 py-2 text-white">
+            <div class="text-xl font-bold text-purple-800">
                 LOGO
             </div>
             <div class="static" x-data="dropdown()">
-                <button class="text-green-800 hover:outline-none lg:hidden" x-on:click="open">
+                <button class="text-purple-800 hover:outline-none lg:hidden" x-on:click="open">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
-                <ul class="fixed right-0 grid grid-cols-1 mr-2 border border-green-900 divide-y divide-green-900"
-                    :class="{'hidden lg:flex lg:border-none  lg:divide-none lg:bg-none lg:space-x-2': isOpen() == false }" x-on:click.away="close">
+                <ul class="fixed right-0 grid items-center justify-center grid-cols-1 mr-3 bg-purple-900 divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50"
+                    :class="{'hidden': isOpen() == false }" x-on:click.away="close">
                     <li>
-                        <a href="" class="block px-2 py-1 hover:bg-green-900 lg:hover:border-b lg:px-0 lg:hover:bg-none">Home</a>
+                        <a href="" class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Home</a>
                     </li>
                     <li>
-                        <a href="" class="block px-2 py-1 hover:bg-green-900 lg:hover:border-b lg:px-0 lg:hover:bg-none">Services</a>
+                        <a href="" class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Services</a>
                     </li>
                     <li>
-                        <a href="" class="block px-2 py-1 hover:bg-green-900 lg:hover:border-b lg:px-0 lg:bg-none">Contact Us</a>
+                        <a href="" class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -60,16 +60,55 @@
                 </p>
             </div>
             <a href=""
-                class="px-3 py-2 text-lg font-bold transition duration-300 ease-in-out border-2 border-green-900 rounded hover:bg-green-900">
+                class="px-3 py-2 text-lg font-bold transition duration-300 ease-in-out border-2 border-purple-900 rounded hover:bg-purple-900">
                 Connect
             </a>
         </div>
     </div>
-    <div>
-        If your elements are in reverse order (using say flex-row-reverse or flex-col-reverse), use the divide-x-reverse
-        or divide-y-reverse utilities to ensure the border is added to the correct side of each element The divide width
-        scale inherits its values from the borderWidth scale by default, so if you’d like to customize your values for
-        both border width and divide width together, use the theme.borderWidth section of your tailwind.config.js file.
+    <div class="grid grid-cols-1 gap-5 px-5 py-5 -my-20 sm:grid-cols-2 lg:grid-cols-4 justify-items-center">
+        <div class="flex flex-col items-center justify-center w-3/4 px-5 py-10 space-y-3 bg-white shadow-md group">
+            <div class="w-20 h-20 bg-center bg-no-repeat bg-cover hover:animate-bounce" style="background-image: url('{{ asset('img/icons/rocket.svg') }}')">
+
+            </div>
+            <div class="flex flex-col items-center justify-center h-20 font-semibold sm:hidden group-hover:flex">
+                <p class="text-center ">
+                    High Speed Internet connection
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-3/4 px-5 py-10 space-y-3 bg-white shadow-md group">
+            <div class="w-20 h-20 bg-center bg-no-repeat bg-cover hover:animate-bounce" style="background-image: url('{{ asset('img/icons/bandwidth.svg') }}')">
+
+            </div>
+            <div class="flex flex-col items-center justify-center h-20 font-semibold sm:hidden group-hover:flex">
+                <p class="text-center ">
+                    Unlimited Data
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-3/4 px-5 py-10 space-y-3 bg-white shadow-md group">
+            <div class="w-20 h-20 bg-center bg-no-repeat bg-cover hover:animate-bounce" style="background-image: url('{{ asset('img/icons/server.svg') }}')">
+
+            </div>
+            <div class="flex flex-col items-center justify-center h-20 font-semibold sm:hidden group-hover:flex">
+                <p class="text-center ">
+                    Free Installation
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-3/4 px-5 py-10 space-y-3 bg-white shadow-md group">
+            <div class="w-20 h-20 bg-center bg-no-repeat bg-cover hover:animate-bounce" style="background-image: url('{{ asset('img/icons/data-flow.svg') }}')">
+
+            </div>
+            <div class="flex flex-col items-center justify-center h-20 font-semibold sm:hidden group-hover:flex">
+                <p class="text-center ">
+                    No Throttling
+                </p>
+            </div>
+        </div>
     </div>
     <script>
         var slider = document.getElementById("slider");
@@ -90,10 +129,10 @@
 
         window.onscroll = function(e) {
             var navi = document.getElementById("navi")
-            navi.classList.add("bg-gray-800")
+            navi.classList.add("bg-gray-100")
             navi.classList.add("bg-opacity-50")
             if (window.scrollY == 0) {
-                navi.classList.remove("bg-gray-800")
+                navi.classList.remove("bg-gray-100")
                 navi.classList.remove("bg-opacity-50")
             }
         }
