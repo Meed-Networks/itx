@@ -47,6 +47,10 @@
                             class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Contact
                             Us</a>
                     </li>
+                    <li>
+                        <a href="/pricing"
+                            class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Pricing</a>
+                    </li>
                 </ul>
             </div>
         </div>
