@@ -20,19 +20,16 @@
             <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 font-bold text-purple-900 bg-white bg-opacity-50 border border-b divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none"
                 :class="{'hidden': isOpen() == false }" x-on:click.away="close">
                 <li>
-                    <x-nav-items link="#" linkName="Home" />
+                    <x-nav-items link="{{ route('home') }}" linkName="Home" />
                 </li>
                 <li>
-                    <x-nav-items link="#" linkName="Services" />
+                    <x-nav-items link="{{ route('service') }}" linkName="Services" />
                 </li>
                 <li>
-                    <x-nav-items link="#" linkName="pricing" />
+                    <x-nav-items link="{{ route('pricing') }}" linkName="pricing" />
                 </li>
                 <li>
-                    <x-nav-items link="#" linkName="Coverage" />
-                </li>
-                <li>
-                    <x-nav-items link="#" linkName="Contact Us" />
+                    <x-nav-items link="{{ route('contact') }}" linkName="Contact Us" />
                 </li>
             </ul>
         </div>
