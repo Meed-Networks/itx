@@ -1245,6 +1245,14 @@ video {
 		display: none;
 	}
 
+	.sm\:h-4 {
+		height: 1rem;
+	}
+
+	.sm\:h-48 {
+		height: 12rem;
+	}
+
 	.sm\:grid-cols-3 {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}

@@ -34,7 +34,7 @@
                 <div class="flex flex-col items-start justify-start space-y-2">
                     <span class="text-sm font-bold">CONTACT</span>
                     <div class="flex flex-col items-start justify-start space-y-2 text-sm">
-                        <a href="tel:+2348153244101"
+                        <a href="whatsapp://send?text=Good day!&phone=+2348142950096"
                             class="flex items-center justify-start space-x-1 hover:text-purple-500">
                             <span>
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -44,9 +44,9 @@
                                     </path>
                                 </svg>
                             </span>
-                            <span>+2348153244101</span>
+                            <span>+2348142950096</span>
                         </a>
-                        <a href="tel:+234(9)2918976"
+                        <a href="tel:+2348034275223"
                             class="flex items-center justify-start space-x-1 hover:text-purple-500">
                             <span>
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -56,7 +56,19 @@
                                     </path>
                                 </svg>
                             </span>
-                            <span>+234(9)2918976</span>
+                            <span>+2348034275223</span>
+                        </a>
+                        <a href="tel:+2348096666609"
+                            class="flex items-center justify-start space-x-1 hover:text-purple-500">
+                            <span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span>+2348096666609</span>
                         </a>
                         <a href="mailto:info@itxtelecoms.com"
                             class="flex items-center justify-start space-x-1 hover:text-purple-500">
@@ -94,7 +106,7 @@
                         <div class="flex flex-col items-start justify-center space-y-0.5 col-span-full">
                             <label class="text-xs font-bold uppercase">Message</label>
                             <textarea name="message" id="message" row="10" col="10"
-                                class="w-full px-2 py-1 text-black resize-none focus:outline-none focus:ring focus:border-purple-300">
+                                class="w-full px-2 py-1 text-black resize-none focus:outline-none focus:ring focus:border-purple-300 h-60 sm:h-48">
 
                             </textarea>
                         </div>
