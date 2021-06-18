@@ -32,24 +32,22 @@
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
-                <ul class="fixed right-0 grid items-center justify-center grid-cols-1 mr-3 bg-purple-900 divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50"
+                <ul class="fixed right-0 grid items-center justify-center grid-cols-1 mr-3 border divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50"
                     :class="{'hidden': isOpen() == false }" x-on:click.away="close">
                     <li>
-                        <a href=""
-                            class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Home</a>
+                        <x-nav-items link="#" linkName="Home"/>
                     </li>
                     <li>
-                        <a href=""
-                            class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Services</a>
+                        <x-nav-items link="#" linkName="Services"/>
                     </li>
                     <li>
-                        <a href=""
-                            class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Contact
-                            Us</a>
+                        <x-nav-items link="#" linkName="pricing"/>
                     </li>
                     <li>
-                        <a href="/pricing"
-                            class="block px-2 py-1 hover:bg-purple-900 lg:hover:border-b lg:px-0 lg:hover:bg-transparent">Pricing</a>
+                        <x-nav-items link="#" linkName="Coverage"/>
+                    </li>
+                    <li>
+                        <x-nav-items link="#" linkName="Contact Us"/>
                     </li>
                 </ul>
             </div>
