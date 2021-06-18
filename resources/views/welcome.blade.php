@@ -40,6 +40,7 @@
         </div>
     </div>
     <x-service-item />
+    <x-map />
     <div class="h-[500px] static">
         <div class="grid h-full grid-cols-1 gap-5 px-3 py-10 text-white bg-fixed bg-center bg-no-repeat bg-cover md:grid-cols-2"
             style="background-image: url('{{ asset('img/bg1.jpg') }}')">

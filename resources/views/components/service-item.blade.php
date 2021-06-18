@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-end -mt-20 space-y-5 lg:-mt-64 justify-evenly lg:h-96">
+<div class="flex flex-wrap items-end py-5 -mt-20 space-y-5 lg:-mt-64 justify-evenly lg:h-96">
     <div
         class="flex flex-col items-center justify-center px-5 py-10 space-y-3 bg-white shadow-md lg:hover:-mt-24 w-60 group">
         <div class="w-20 h-20 bg-center bg-no-repeat bg-cover hover:animate-bounce"
