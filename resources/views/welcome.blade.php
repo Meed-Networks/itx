@@ -62,6 +62,7 @@
             </div>
         </div>
     </div>
+    <x-testimony />
     <div class="bg-purple-900 ">
         <div class="text-white bg-black bg-opacity-75 ">
             <div class="grid grid-cols-1 gap-5 px-3 py-5 sm:grid-cols-3 lg:gap-10">

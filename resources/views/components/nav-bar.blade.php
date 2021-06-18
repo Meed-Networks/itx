@@ -1,4 +1,4 @@
-<div class="fixed top-0 w-full" id="navi">
+<div class="fixed top-0 z-50 w-full" id="navi">
     <div class="flex items-center justify-between px-3 py-2 text-white">
         <div class="text-xl font-bold text-purple-800">
             LOGO
@@ -17,7 +17,7 @@
                 </svg>
 
             </button>
-            <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 border border-b divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none"
+            <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 font-bold text-purple-900 bg-white bg-opacity-50 border border-b divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none"
                 :class="{'hidden': isOpen() == false }" x-on:click.away="close">
                 <li>
                     <x-nav-items link="#" linkName="Home" />
