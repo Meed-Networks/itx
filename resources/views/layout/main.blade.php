@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itxtelecoms</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">
+    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css"> --}}
+    <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}" type="text/css">
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/animation.js') }}"></script>
     <style>

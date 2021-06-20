@@ -1,31 +1,64 @@
-<div class="flex flex-col items-center justify-center p-5 space-y-3 transition duration-300 ease-in-out delay-150 border divide-y divide-purple-700 rounded min-w-max divide-opacity-50 hover:shadow-lg">
+<div class="flex flex-col items-start p-5 space-y-5 shadow-md rounded-md col-span-1">
     <!-- Order your soul. Reduce your wants. - Augustine -->
-    <div class="flex items-center justify-center">
-        <span class="text-lg font-bold text-purple-900">Simple</span>
-    </div>
-    <div class="flex flex-col items-center justify-center pt-3 space-y-2">
-        <div class="flex items-center justify-center space-x-2 font-semibold text-purple-900 group">
+    <span class="text-lg font-bold text-purple-600">Freedom Package</span>
+    <span class="text-purple-700 opacity-80 text-sm text-left">
+        For starters, that wants to experience our services
+    </span>
+    <span class="flex space-x-1 text-purple-900 items-center justify-center">
+        <span class="font-bold text-2xl">1Mb</span>
+        <span class="text-opacity-40 text-xs font-normal">/ sec</span>
+    </span>
+    <ul class="flex flex-col space-y-2">
+        <li class="flex space-x-2 font-semibold text-sm text-purple-700 items-center">
             <span>
-                <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
             </span>
-            <span>1Mbps</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2 font-semibold text-purple-900 group">
-            <span><svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            <span class="text-opacity-75">Unlimited Download</span>
+        </li>
+        <li class="flex space-x-2 font-semibold text-sm text-purple-700 items-center">
+            <span>
+                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
-                    </path>
-                </svg></span>
-            <span>30days</span>
-        </div>
-        <div class="flex items-center justify-center text-white group">
-            <span class="px-2 py-2 font-bold bg-purple-700 rounded group-hover:hidden">₦ 20,000</span>
-            <button class="hidden px-2 py-2 font-bold bg-purple-700 rounded group-hover:inline-block">Subscribe</button>
-        </div>
-    </div>
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </span>
+            <span class="text-opacity-75">High Speed Broadband</span>
+        </li>
+        <li class="flex space-x-2 font-semibold text-sm text-purple-700 items-center">
+            <span>
+                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </span>
+            <span class="text-opacity-75">Instant Access</span>
+        </li>
+        <li class="flex space-x-2 font-semibold text-sm text-purple-700 items-center">
+            <span>
+                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </span>
+            <span class="text-opacity-75">Unlimited</span>
+        </li>
+        <li class="flex space-x-2 font-semibold text-sm text-purple-700 items-center">
+            <span>
+                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </span>
+            <span class="text-opacity-75">Affordable Data Plan</span>
+        </li>
+    </ul>
+    <button type="submit" name="" class="font-semibold text-purple-700 border border-purple-700 hover:bg-purple-700 hover:text-white px-3 py-2 text-center w-full focus:outline-none">Choose Plan</button>
 </div>

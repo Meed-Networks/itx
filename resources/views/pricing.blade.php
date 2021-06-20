@@ -16,11 +16,11 @@
             </span>
         </div>
         <div>
-            <div class="flex flex-wrap items-center justify-center w-full" :class="{'hidden': tab != 1}">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5" :class="{'hidden': tab != 1}">
                 <x-price-item />
             </div>
-            <div class="flex" :class="{'hidden': tab != 2}">
-                Hello
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5" :class="{'hidden': tab != 2}">
+                <x-price-item />
             </div>
         </div>
     </div>
