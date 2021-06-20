@@ -1,11 +1,11 @@
 <div class="flex flex-col items-start p-5 space-y-5 shadow-md rounded-md col-span-1">
     <!-- Order your soul. Reduce your wants. - Augustine -->
-    <span class="text-lg font-bold text-purple-600">Freedom Package</span>
+    <span class="text-lg font-bold text-purple-600">{{ $name }}</span>
     <span class="text-purple-700 opacity-80 text-sm text-left">
-        For starters, that wants to experience our services
+        Pay up to <span class="font-bold">6 Months</span> and get <span class="font-bold">Free Set up</span>
     </span>
     <span class="flex space-x-1 text-purple-900 items-center justify-center">
-        <span class="font-bold text-2xl">1Mb</span>
+        <span class="font-bold text-2xl">{{ $speed }}Mb </span>
         <span class="text-opacity-40 text-xs font-normal">/ sec</span>
     </span>
     <ul class="flex flex-col space-y-2">
@@ -60,5 +60,9 @@
             <span class="text-opacity-75">Affordable Data Plan</span>
         </li>
     </ul>
+    <span class="flex space-x-1 text-purple-900 items-center justify-center">
+        <span class="font-bold text-2xl">N {{ $amount }}</span>
+        <span class="text-opacity-20 text-xs font-semibold text-purple-400">/ month</span>
+    </span>
     <button type="submit" name="" class="font-semibold text-purple-700 border border-purple-700 hover:bg-purple-700 hover:text-white px-3 py-2 text-center w-full focus:outline-none">Choose Plan</button>
 </div>
