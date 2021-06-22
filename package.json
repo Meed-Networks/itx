@@ -22,7 +22,7 @@
         "webpack-cli": "^4.7.2"
     },
     "dependencies": {
-        "alpinejs": "^2.8.2",
+        "alpinejs": "^3.1.0",
         "animejs": "^3.2.1",
         "scroll-js": "^3.4.1"
     }
