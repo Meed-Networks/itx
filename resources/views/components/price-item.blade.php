@@ -1,4 +1,4 @@
-<div class="flex flex-col items-start p-5 space-y-5 shadow-md rounded-md col-span-1 hover:bg-indigo-900 hover:-mt-4 hover:mb-4 transition duration-1000 ease-in-out group">
+<div class="flex flex-col items-start p-5 space-y-5 shadow-md rounded-md col-span-1 hover:bg-indigo-900 hover:-mt-4 hover:mb-4 transition duration-1000 delay-200 ease-in-out group">
     <!-- Order your soul. Reduce your wants. - Augustine -->
     <span class="text-lg font-bold text-purple-600 group-hover:text-white">{{ $name }}</span>
     <span class="text-purple-700 group-hover:text-white opacity-80 text-sm text-left">
