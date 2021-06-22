@@ -16,18 +16,18 @@
             </span>
         </div>
         <div class="px-5">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10" :class="{'hidden': tab != 1}">
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 lg:px-20" :class="{'hidden': tab != 1}">
+                <x-price-item speed="2" amount="10,750" name="Freedom Package" />
+                <x-price-item speed="4" amount="16,200" name="Family Mini" />
+                <x-price-item speed="6" amount="25,500" name="Family Max" />
+                <x-price-item speed="3" amount="5,000" name="Night Plan" />
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10" :class="{'hidden': tab != 2}">
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
-                <x-price-item speed="1" amount="10,000" name="Freedom Package" />
+                <x-price-item speed="2" amount="40,000" name="Dedicated Package" />
+                <x-price-item speed="4" amount="70,250" name="Dedicated Package" />
+                <x-price-item speed="6" amount="98,000" name="Dedicated Package" />
+                <x-price-item speed="8" amount="115,000" name="Dedicated Package" />
+                <x-price-item speed="10" amount="122,500" name="Dedicated Package" />
             </div>
         </div>
     </div>
