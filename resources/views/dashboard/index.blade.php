@@ -14,14 +14,35 @@
     <div class="h-screen bg-purple-900">
         <div class="bg-white dark:bg-black h-full dark:bg-opacity-90">
             <div class="h-full grid grid-cols-6 dark:text-white" x-data="{open: false}">
-                <div class="h-full border" :class="{'hidden': open == true}">
-                    nav
+                <div class="h-full border flex space-y-5 flex-col items-center justify-between py-2" :class="{'hidden': open == true}">
+                    <div class="flex space-y-5 flex-col items-center justify-start">
+                        <span>
+                            Logo
+                        </span>
+                        <ul class="flex flex-col space-y-3 items-center">
+                            <li>
+                                <x-dashboard.nav />
+                            </li>
+                            <li>
+                                <x-dashboard.nav />
+                            </li>
+                            <li>
+                                <x-dashboard.nav />
+                            </li>
+                            <li>
+                                <x-dashboard.nav />
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">
+                        <x-dashboard.nav />
+                    </a>
                 </div>
                 <div class="h-full overflow-scroll  border"
                     :class="{'col-span-5': open == false, 'col-span-6': open == true}">
                     <div class="relative">
                         <div class="sticky top-0">
-                            <button x-on:click="open=!open">
+                            <button x-on:click="open=!open" class="focus:outline-none focus:bg-none">
                                 <span class="" :class="{'hidden': open == false}">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
