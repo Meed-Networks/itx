@@ -25,6 +25,6 @@ Route::get('/service', function () {
     return view('pricing');
 })->name('service');
 
-Route::get('/contact', function () {
-    return view('pricing');
+Route::get('/dashboard', function () {
+    return view("dashboard.index");
 })->name('contact');

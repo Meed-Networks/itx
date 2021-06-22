@@ -29,7 +29,7 @@
                     <x-nav-items link="{{ route('pricing') }}" linkName="pricing" />
                 </li>
                 <li>
-                    <x-nav-items link="{{ route('contact') }}" linkName="Contact Us" />
+                    <x-nav-items link="#contact" linkName="Contact Us" />
                 </li>
             </ul>
         </div>

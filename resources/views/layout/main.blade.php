@@ -85,7 +85,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col items-start justify-start space-y-2">
+                <div class="flex flex-col items-start justify-start space-y-2" id="contact">
                     <span class="text-sm font-bold uppercase">GET IN TOUCH</span>
                     <form action="mailto:info@itxtelecoms.com" method="POST"
                         class="grid w-full grid-cols-1 gap-2 text-sm lg:grid-cols-2">
