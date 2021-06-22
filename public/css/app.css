@@ -1273,8 +1273,28 @@ video {
 .duration-300 {
 	transition-duration: 300ms;
 }
+.duration-700 {
+	transition-duration: 700ms;
+}
+.duration-1000 {
+	transition-duration: 1000ms;
+}
 .ease-in-out {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover\:my-1:hover {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+.hover\:-my-4:hover {
+	margin-top: -1rem;
+	margin-bottom: -1rem;
+}
+.hover\:-mt-4:hover {
+	margin-top: -1rem;
+}
+.hover\:mb-4:hover {
+	margin-bottom: 1rem;
 }
 @-webkit-keyframes bounce {
 
@@ -1308,6 +1328,40 @@ video {
 	-webkit-animation: bounce 1s infinite;
 	        animation: bounce 1s infinite;
 }
+@-webkit-keyframes pulse {
+
+	50% {
+		opacity: .5;
+	}
+}
+@keyframes pulse {
+
+	50% {
+		opacity: .5;
+	}
+}
+.hover\:animate-pulse:hover {
+	-webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@-webkit-keyframes ping {
+
+	75%, 100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+@keyframes ping {
+
+	75%, 100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+.hover\:animate-ping:hover {
+	-webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+	        animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
 .hover\:bg-purple-400:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
@@ -1319,6 +1373,10 @@ video {
 .hover\:bg-purple-700:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+}
+.hover\:bg-indigo-900:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
 }
 .hover\:text-purple-500:hover {
 	--tw-text-opacity: 1;
@@ -1357,6 +1415,14 @@ video {
 }
 .group:hover .group-hover\:hidden {
 	display: none;
+}
+.group:hover .group-hover\:text-white {
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.group:hover .group-hover\:hover\:text-white:hover {
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 .dark .dark\:bg-gray-900 {
 	--tw-bg-opacity: 1;
