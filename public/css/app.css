@@ -1613,5 +1613,10 @@ video {
 	.lg\:hover\:bg-transparent:hover {
 		background-color: transparent;
 	}
+
+	.lg\:hover\:text-purple-900:hover {
+		--tw-text-opacity: 1;
+		color: rgba(76, 29, 149, var(--tw-text-opacity));
+	}
 }
 

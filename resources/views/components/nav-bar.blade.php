@@ -17,7 +17,7 @@
                 </svg>
 
             </button>
-            <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 font-bold text-purple-900 bg-white bg-opacity-50 border border-b divide-y divide-grey-500 lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none"
+            <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 font-bold text-purple-900 bg-white bg-opacity-50 border border-b  lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none rounded-md"
                 :class="{'hidden': isOpen() == false }" x-on:click.away="close">
                 <li>
                     <x-nav-items link="{{ route('home') }}" linkName="Home" />
@@ -55,11 +55,11 @@
 
     window.onscroll = function(e) {
         var navi = document.getElementById("navi")
-        navi.classList.add("bg-gray-100")
-        navi.classList.add("bg-opacity-50")
+        navi.classList.add("bg-white")
+        // navi.classList.add("bg-opacity-50")
         if (window.scrollY == 0) {
-            navi.classList.remove("bg-gray-100")
-            navi.classList.remove("bg-opacity-50")
+            navi.classList.remove("bg-white")
+            // navi.classList.remove("bg-opacity-50")
         }
 
 
