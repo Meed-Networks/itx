@@ -13,8 +13,9 @@
 <body>
     <div class="h-screen bg-purple-900">
         <div class="bg-white dark:bg-black h-full dark:bg-opacity-90">
-            <div class="h-full grid grid-cols-6 dark:text-white" x-data="{open: false}">
-                <div class="h-full border flex space-y-5 flex-col items-center justify-between py-2" :class="{'hidden': open == true}">
+            <div class="h-full grid grid-cols-6 dark:text-white md:grid-cols-10 lg:grid-cols-12" x-data="{open: true}">
+                <div class="h-full flex space-y-5 flex-col items-center justify-between py-2 "
+                    :class="{'hidden md:flex': open == true}">
                     <div class="flex space-y-5 flex-col items-center justify-start">
                         <span>
                             Logo
@@ -38,11 +39,10 @@
                         <x-dashboard.nav />
                     </a>
                 </div>
-                <div class="h-full overflow-scroll  border"
-                    :class="{'col-span-5': open == false, 'col-span-6': open == true}">
-                    <div class="relative">
-                        <div class="sticky top-0">
-                            <button x-on:click="open=!open" class="focus:outline-none focus:bg-none">
+                <div class="h-full overflow-y-scroll " :class="{'col-span-5': open == false, 'col-span-6 md:col-span-9 lg:col-span-11': open == true}">
+                    <div class="relative flex flex-col space-y-5">
+                        <div class="sticky top-0 py-2 px-10 flex items-center">
+                            <button x-on:click="open=!open" class="focus:outline-none focus:bg-none md:hidden">
                                 <span class="" :class="{'hidden': open == false}">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -58,35 +58,100 @@
                                     </svg>
                                 </span>
                             </button>
+                            <span>
+                                Notification
+                            </span>
                         </div>
-                        <div class="p-5">
-                            Body
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime veniam voluptates
-                            magnam, iure labore suscipit sit! Adipisci, reprehenderit repellendus iste ad voluptatum,
-                            deserunt similique provident sint exercitationem voluptas possimus.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consectetur unde quae
-                            optio,
-                            doloremque sit asperiores, eaque totam quas delectus maxime deserunt perferendis nihil
-                            distinctio sint harum a quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            At minus omnis dignissimos in consequuntur consequatur fuga odio, doloribus iste eligendi
-                            dolorem repellendus voluptate praesentium ratione similique nobis ducimus, dolore amet.
-                            Officia quos corrupti nesciunt amet dolorem nam provident nobis, veniam nostrum expedita
-                            aliquam
-                            et id numquam consectetur, aspernatur tempora voluptates nisi exercitationem commodi sed
-                            temporibus consequuntur? Pariatur consequatur doloribus consequuntur.
-                            Accusantium fugit consequatur ex eligendi quidem ad. Aut, beatae error, praesentium nesciunt
-                            perferendis iure ex consequuntur saepe tempora culpa consectetur cupiditate corrupti
-                            ratione,
-                            commodi fugit quod? Ab possimus animi eaque.
-                            Voluptatem laborum placeat, tenetur pariatur eius earum tempore deleniti cum atque ad non
-                            consequatur, harum odio facere qui? Voluptates hic debitis similique assumenda perferendis
-                            pariatur illum ad? Voluptatibus, delectus illum!
-                            Omnis architecto possimus recusandae illum quam non esse, aut ratione eaque quod officiis in
-                            hic
-                            maiores eos optio ex quo consectetur voluptas. Quod eveniet tenetur eius quis atque
-                            accusamus
-                            debitis.
+                        <div class="px-3">
+                            <div class="grid grid-cols-1 px-5 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                                <div class="relative bg-white bg-opacity-10 p-5 rounded-lg flex space-x-5 items-center">
+                                    <span>
+                                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="flex flex-col">
+                                        <span class="text-opacity-25 text-gray-50">
+                                            Users
+                                        </span>
+                                        <span class="font-bold text-2xl">
+                                            10k
+                                        </span>
+                                        <span class="text-opacity-25 text-gray-50">
+                                            0.05% unique
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="relative bg-white bg-opacity-10 p-5 rounded-lg flex space-x-5 items-center">
+                                    <span>
+                                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="flex flex-col">
+                                        <span class="text-opacity-25 text-gray-50">
+                                            Users
+                                        </span>
+                                        <span class="font-bold text-2xl">
+                                            10k
+                                        </span>
+                                        <span class="text-opacity-25 text-gray-50">
+                                            0.05% unique
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="relative bg-white bg-opacity-10 p-5 rounded-lg flex space-x-5 items-center">
+                                    <span>
+                                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="flex flex-col">
+                                        <span class="text-opacity-25 text-gray-50">
+                                            Users
+                                        </span>
+                                        <span class="font-bold text-2xl">
+                                            10k
+                                        </span>
+                                        <span class="text-opacity-25 text-gray-50">
+                                            0.05% unique
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="relative bg-white bg-opacity-10 p-5 rounded-lg flex space-x-5 items-center">
+                                    <span>
+                                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="flex flex-col">
+                                        <span class="text-opacity-25 text-gray-50">
+                                            Users
+                                        </span>
+                                        <span class="font-bold text-2xl">
+                                            10k
+                                        </span>
+                                        <span class="text-opacity-25 text-gray-50">
+                                            0.05% unique
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
