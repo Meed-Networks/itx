@@ -8,8 +8,8 @@
     <title>Itxtelecoms</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">
     {{-- <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}" type="text/css"> --}}
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/animation.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/animation.js') }}" defer></script>
     <style>
         * {
             padding: 0;
