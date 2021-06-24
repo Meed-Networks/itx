@@ -19,7 +19,7 @@ class PriceItem extends Component
     public function __construct(
         $name,
         $amount,
-        $speed,
+        $speed
     )
     {
         $this->name = $name;
