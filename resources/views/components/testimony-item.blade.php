@@ -1,8 +1,8 @@
 <div {{ $attributes->merge(["class" => "flex flex-col items-center justify-center p-5 space-y-3 text-white rounded-md bg-gradient-to-r"]) }}>
     <div class="relative flex flex-col items-center justify-center px-3 space-y-2 border-4 border-purple-200 border-opacity-50 rounded-full w-60 h-60 ">
         <span class="block w-16 h-16 bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('img/icons/left-quote.svg') }}')"></span>
-        <p class="px-1 font-bold text-center">
-            A circular client Testimonial Post template with a green/blue theme. Add your own text and color scheme.
+        <p class="px-2 font-bold text-center text-xs">
+            {{$statement}}
         </p>
         <span class="absolute bottom-0 right-0">
             <svg class="w-16 h-16 text-opacity-50 bg-opacity-50 fill-current" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -14,7 +14,7 @@
         </span>
     </div>
     <div class="flex flex-col items-center self-start justify-center">
-        <span class="text-lg font-bold">ABDULLAHI JIMOH</span>
-        <span class="text-xs font-light">FULLSTACK DEVELOPER MEED NETWORKS</span>
+        <span class="text-lg font-bold">{{ $name }}</span>
+        <span class="text-xs font-light">{{ $address }}</span>
     </div>
 </div>

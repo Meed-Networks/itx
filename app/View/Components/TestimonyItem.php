@@ -10,14 +10,23 @@ class TestimonyItem extends Component
 
     public $gradient;
 
+    public $statement;
+
+    public $name;
+
+    public $address;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($statement, $name, $address)
     {
         $this->gradient = $this->shuffleGradient($this->colors);
+        $this->statement = $statement;
+        $this->name = $name;
+        $this->address = $address;
     }
 
     private function shuffleGradient($gradient)
