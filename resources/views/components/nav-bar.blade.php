@@ -1,7 +1,7 @@
 <div class="fixed top-0 z-50 w-full" id="navi">
     <div class="flex items-center justify-between px-3 py-2 text-white">
         <div class="text-xl font-bold text-purple-800">
-            LOGO
+            <img src="{{ asset('img/logo.png') }}" alt="" class="w-10 h-5">
         </div>
         <div class="static" x-data="dropdown()">
             <button class="text-purple-800 hover:outline-none lg:hidden" x-on:click="open">
@@ -18,7 +18,7 @@
 
             </button>
             <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 font-bold text-purple-900 bg-white bg-opacity-50 border border-b  lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none rounded-md"
-                :class="{'hidden': isOpen() == false }" x-on:click.away="close">
+                :class="{'hidden': isOpen() == false }">
                 <li>
                     <x-nav-items link="{{ route('home') }}" linkName="Home" />
                 </li>
