@@ -7,8 +7,7 @@
             See Our Coverage Areas
         </span>
         <p class="px-5 font-semibold lg:px-0 lg:pr-10">
-            However, if you are building a package that utilizes Blade components, you will need to manually register
-            your component class and its HTML tag alias.
+            We cover a majority of area in FCT. Which Includes Wuse, Garki, Maitama and Apo
         </p>
     </div>
     <div id="map" class="w-full h-[600px]"></div>
@@ -29,7 +28,7 @@
         rawFile.send(null);
     }
 
-    readTextFile("./js/nigeria_lga.json", function(text) {
+    readTextFile("{{ asset('js/nigeria_lga.json') }}", function(text) {
         var data = JSON.parse(text);
         console.log(data.features[0].properties.NAME_1);
 
