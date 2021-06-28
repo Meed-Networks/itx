@@ -17,7 +17,7 @@
                 </svg>
 
             </button>
-            <ul class="box-content fixed right-0 grid justify-center grid-cols-1 mr-3 font-bold text-purple-900 bg-white bg-opacity-50 border border-b  lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none rounded-md"
+            <ul class="box-content fixed right-0 left-0 grid justify-center grid-cols-1 mt-1 font-bold text-purple-900 bg-white bg-opacity-70  border border-b  lg:flex lg:divide-none lg:bg-transparent lg:space-x-2 lg:relative divide-opacity-50 lg:border-none rounded-md w-full"
                 :class="{'hidden': isOpen() == false }">
                 <li>
                     <x-nav-items link="{{ route('home') }}" linkName="Home" />
