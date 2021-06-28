@@ -30,8 +30,10 @@
                     services
                     to
                     your door steps.</p>
-                <p class="text-xl leading-tight">We specialize in providing dynamic out of the box solutions for
-                    all your wireless connectivity needs.</p>
+                <p class="text-xl leading-tight">
+                    We are a broadband fiber/wireless internet company that specialize in providing and deploying unlimited
+                    internet to your home/office. We have a knack for customer satisfaction.
+                </p>
                 <a href="#"
                     class="px-3 py-2 text-lg font-bold transition duration-300 ease-in-out border-2 border-purple-900 rounded hover:bg-purple-900">Connect
                 </a>
@@ -61,6 +63,5 @@
                 i = 0;
             }
         }, 5000);
-
     </script>
 @endsection
