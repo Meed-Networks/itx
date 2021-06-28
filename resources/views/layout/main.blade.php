@@ -111,6 +111,9 @@
 
                             </textarea>
                         </div>
+                        <div class="col-span-full">
+                            <button type="submit" name="submit" class="w-full text-center py-2 bg-purple-600 font-bold focus:outline-none text-lg hover:bg-purple-800">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
