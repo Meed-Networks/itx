@@ -1,6 +1,6 @@
 <div {{ $attributes->merge(["class" => "flex flex-col items-center justify-center p-5 space-y-3 text-white rounded-md bg-gradient-to-r"]) }}>
     <div class="relative flex flex-col items-center justify-center px-3 space-y-2 border-4 border-purple-200 border-opacity-50 rounded-full w-60 h-60 ">
-        <span class="block w-16 h-16 bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('img/icons/left-quote.svg') }}')"></span>
+        <span class="block w-8 h-8 bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('img/icons/left-quote.svg') }}')"></span>
         <p class="px-2 font-bold text-center text-xs">
             {{$statement}}
         </p>
