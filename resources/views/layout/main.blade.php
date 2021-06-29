@@ -19,7 +19,8 @@
     </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 static" onload="myFunction()">
+    <x-loader />
     <x-nav-bar />
     @yield('main')
     <div class="bg-purple-900 ">
@@ -112,7 +113,8 @@
                             </textarea>
                         </div>
                         <div class="col-span-full">
-                            <button type="submit" name="submit" class="w-full text-center py-2 bg-purple-600 font-bold focus:outline-none text-lg hover:bg-purple-800">Submit</button>
+                            <button type="submit" name="submit"
+                                class="w-full text-center py-2 bg-purple-600 font-bold focus:outline-none text-lg hover:bg-purple-800">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -124,6 +126,29 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        var slideUp = {
+            distance: '150%',
+            origin: 'right',
+            opacity: null
+        };
+
+        var node = ScrollReveal().reveal("#node1", slideUp)
+        var node = ScrollReveal().reveal("#node2", slideUp)
+    </script>
+    <script>
+        function myFunction() {
+            myVar = setTimeout(showPage, 50);
+        }
+
+        function showPage() {
+            document.getElementById("loader").classList.add("hidden");
+            console.log(document.getElementById("loader").classList)
+            // document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>

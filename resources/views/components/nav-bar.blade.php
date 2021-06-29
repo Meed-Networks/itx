@@ -59,6 +59,7 @@
         // navi.classList.add("bg-opacity-50")
         if (window.scrollY == 0) {
             navi.classList.remove("bg-white")
+            navi.classList.add("text-white")
             // navi.classList.remove("bg-opacity-50")
         }
 
