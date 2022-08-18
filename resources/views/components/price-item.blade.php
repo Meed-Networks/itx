@@ -2,7 +2,9 @@
     <!-- Order your soul. Reduce your wants. - Augustine -->
     <span class="text-lg font-bold text-purple-600 group-hover:text-white">{{ $name }}</span>
     <span class="text-purple-700 group-hover:text-white opacity-80 text-sm text-left">
-        Pay up to <span class="font-bold">6 Months</span> and get <span class="font-bold">Free Set up</span>
+        @unless($freeSetup == "0")
+        Pay up to <span class="font-bold">6 Months</span> and get <span class="font-bold">Free Set up </span>
+        @endunless
     </span>
     <span class="flex space-x-1 text-purple-900 group-hover:text-white items-center justify-center">
         <span class="font-bold text-2xl">{{ $speed }}Mb </span>
@@ -61,7 +63,7 @@
         </li>
     </ul>
     <span class="flex space-x-1 text-purple-900 group-hover:text-white items-center justify-center">
-        <span class="font-bold text-2xl">N {{ $amount }}</span>
+        <span class="font-bold text-2xl">₦ {{ $amount }}</span>
         <span class="text-opacity-20 text-xs font-semibold text-purple-400 group-hover:text-white">/ month</span>
     </span>
     <button type="submit" name="" class="font-semibold text-purple-700 group-hover:text-white border border-purple-700 hover:bg-purple-700 hover:text-white px-3 py-2 text-center w-full focus:outline-none">Choose Plan</button>

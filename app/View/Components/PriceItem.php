@@ -11,6 +11,8 @@ class PriceItem extends Component
     public $amount;
 
     public $speed;
+
+    public $freeSetup;
     /**
      * Create a new component instance.
      *
@@ -19,12 +21,14 @@ class PriceItem extends Component
     public function __construct(
         $name,
         $amount,
-        $speed
+        $speed,
+        $freeSetup
     )
     {
         $this->name = $name;
         $this->amount = $amount;
         $this->speed = $speed;
+        $this->freeSetup = $freeSetup;
     }
 
     /**
