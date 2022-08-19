@@ -2,9 +2,11 @@
     <!-- Order your soul. Reduce your wants. - Augustine -->
     <span class="text-lg font-bold text-purple-600 group-hover:text-white">{{ $name }}</span>
     <span class="text-purple-700 group-hover:text-white opacity-80 text-sm text-left">
-        @unless($freeSetup == "0")
+        @if($freeSetup == "1")
         Pay up to <span class="font-bold">6 Months</span> and get <span class="font-bold">Free Set up </span>
-        @endunless
+        @else
+        ㅤ
+        @endif
     </span>
     <span class="flex space-x-1 text-purple-900 group-hover:text-white items-center justify-center">
         <span class="font-bold text-2xl">{{ $speed }}Mb </span>
